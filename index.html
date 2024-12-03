@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кітапхана</title>
+    <meta name="description" content="Қазақ тіліндегі кітаптар кітапханасы. Іздеңіз, жүктеңіз, оқыңыз. PDF және EPUB форматтарындағы кітаптар.">
+    <meta name="keywords" content="кітапхана, қазақша кітаптар, кітап жүктеу, PDF кітаптар, EPUB кітаптар, кітаптар жанры">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Кітапхана</h1>
+        <p>Іздеңіз, жүктеңіз, оқыңыз</p>
+        <form class="search-form">
+            <input type="text" id="searchInput" placeholder="Кітапты іздеу..." oninput="searchBooks()">
+        </form>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Жанрлар</h3>
+            <ul>
+                <li><a href="#" onclick="filterBooks('Ана тілі')">Ана тілі</a></li>
+                <li><a href="#" onclick="filterBooks('Қазақ ертегілері')">Қазақ ертегілері</a></li>
+                <li><a href="#" onclick="filterBooks('Психология')">Психология</a></li>
+                <li><a href="#" onclick="filterBooks('Ұлт ұстаздары')">Ұлт ұстаздары</a></li>
+                <li><a href="feedback.html">Пікірлер мен ұсыныстар</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="new-books">
+                <h2>Жаңа кітаптар</h2>
+                <div id="bookList">
+                    <div class="book">
+                        <h3>Кітап атауы</h3>
+                        <p>Авторы: Автордың аты</p>
+                        <a href="books/sample.pdf" download>PDF жүктеу</a>
+                        <a href="books/sample.epub" download>EPUB жүктеу</a>
+                    </div>
+                    <!-- Еще книги добавляются сюда -->
+                </div>
+
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <button onclick="prevPage()">Алдыңғы бет</button>
+                    <button onclick="nextPage()">Келесі бет</button>
+                </div><!DOCTYPE html>
+                <html lang="kk">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Кітапхана</title>
+                    <meta name="description" content="Қазақ тіліндегі кітаптар кітапханасы. Іздеңіз, жүктеңіз, оқыңыз. PDF және EPUB форматтарындағы кітаптар.">
+                    <meta name="keywords" content="кітапхана, қазақша кітаптар, кітап жүктеу, PDF кітаптар, EPUB кітаптар, кітаптар жанры">
+                    <link rel="stylesheet" href="style.css">
+                </head>
+                <body>
+                    <header>
+                        <h1>Кітапхана</h1>
+                        <p>Іздеңіз, жүктеңіз, оқыңыз</p>
+                        <form class="search-form">
+                            <input type="text" id="searchInput" placeholder="Кітапты іздеу..." oninput="searchBooks()">
+                        </form>
+                    </header>
+                
+                    <div class="container">
+                        <aside class="sidebar">
+                            <h3>Жанрлар</h3>
+                            <ul>
+                                <li><a href="genre.html?genre=Ана тілі">Ана тілі</a></li>
+                                <li><a href="genre.html?genre=Қазақ ертегілері">Қазақ ертегілері</a></li>
+                                <li><a href="genre.html?genre=Психология">Психология</a></li>
+                                <li><a href="genre.html?genre=Ұлт ұстаздары">Ұлт ұстаздары</a></li>
+                                <li><a href="feedback.html">Пікірлер мен ұсыныстар</a></li>
+                            </ul>
+                        </aside>
+                
+                        <main>
+                            <section class="recommended-books">
+                                <h2>Ұсынылған кітаптар</h2>
+                                <div id="bookList">
+                                    <!-- Книги будут выводиться сюда -->
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                
+                    <footer>
+                        <p>Кітапхана © 2024</p>
+                    </footer>
+                
+                    <script src="script.js"></script>
+                </body>
+                </html>
+                
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Кітапхана © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
