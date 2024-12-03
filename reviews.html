@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="sidebar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="genre.html?genre=Қазақ ертегілері">Қазақ ертегілері</a></li>
+                <li><a href="genre.html?genre=Психология">Психология</a></li>
+                <li><a href="genre.html?genre=Ұлт ұстаздары">Ұлт ұстаздары</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="suggestions.html">Предложения</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+            <h1>Отзывы</h1>
+            <form action="submit_review.php" method="POST">
+                <label for="review">Ваш отзыв:</label>
+                <textarea name="review" id="review" rows="4" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
